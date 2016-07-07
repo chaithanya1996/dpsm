@@ -21,6 +21,7 @@ rs = a0/20;
 pos_src = pos_tgt - rs*norms ; %未知音源は放射面より -rsだけ下げた位置に配置する
 figure(1); 
 plot3(pos_tgt(:,1), pos_tgt(:,2), pos_tgt(:,3), 'o', pos_src(:,1), pos_src(:,2), pos_src(:,3), 'x');
+zlim([-a0/2, a0/2]);
 xlabel('x'); ylabel('y'); zlabel('z');
 [num_src, ~] = size(pos_tgt);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
