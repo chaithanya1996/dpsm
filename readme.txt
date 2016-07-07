@@ -1,6 +1,7 @@
-aaaaaaaaaaaaaaaaaaaaaa
-bbbbbbbbbbbbbbbbbbbbbb
-cccccccccccccccccccccc
-dddddddddddddddddddddd
-eeeeeeeeeeeeeeeeeeeeee
+DPSM例題計算ルーチン集です．
+http://www14.atwiki.jp/usapfrog/pages/42.html
 
+qから始まる.mファイルが実行用ルーチンで，
+その他の.mファイルが関数です．
+基本的にはすべてダウンロードして同一階層に保持して下さい．
+原理や定式化は上記ページを参照のこと．
