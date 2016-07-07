@@ -17,9 +17,10 @@ z=[5:5:1000]*mm;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %disk division
-rs = a0/40;
-[pos,norms]=def_circ3(2*rs, a0, [0 0 0], [0 0 1]);
+da = a0/40;
+[pos,norms]=def_circ3(2*da, a0, [0 0 0], [0 0 1]);
 figure(1); plot3(pos(:,1), pos(:,2), pos(:,3), 'o');
+xlabel('x'); ylabel('y'); zlabel('z');
 [num_src, ~] = size(pos);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -27,7 +28,7 @@ figure(1); plot3(pos(:,1), pos(:,2), pos(:,3), 'o');
 %integral
 p=zeros(size(X));
 for si=1:num_src
-    dS = pi*rs^2;
+    dS = pi*da^2;
     r_x = X-pos(si,1);
     r_y = 0-pos(si,2);
     r_z = Z-pos(si,3);    
@@ -45,4 +46,3 @@ shading interp;
 view(2); axis tight;
 xlabel('z'); ylabel('x');
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
